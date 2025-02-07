@@ -6,6 +6,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure html and body cover the full height */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Ensure the body-background covers the full viewport height */
+.body-background {
+    min-height: 100vh; /* Use min-height instead of height */
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Prevent scrolling caused by pseudo-element */
+}
+
 .body-background::before {
     content: '';
     position: absolute;

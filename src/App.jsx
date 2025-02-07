@@ -20,13 +20,13 @@ function App() {
   };
 
   return (
-    <div className='body-background h-screen'>
+    <div className='body-background'>
       <Navbar />
       <div>
-        <p className='text-center text-shadow text-4xl text-red-600 font-bold font-dancing my-5'>
+        <p className='text-center text-shadow text-4xl text-red-600 font-bold font-dancing '>
           Hey Baby! Thank you for bringing so much joy, laughter, purpose, and clarity to my life.
         </p>
-        <p className='text-center text-shadow text-4xl text-red-600 font-bold font-dancing my-5'>
+        <p className='text-center text-shadow text-4xl text-red-600 font-bold font-dancing mt-5 mb-7'>
           Please allow me the honor of showing you just how special you are on Valentine's Day.
         </p>
         <p className='text-center text-7xl text-red-600 font-semibold font-great mt-10'>
