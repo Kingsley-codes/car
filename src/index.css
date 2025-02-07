@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/background1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35; /* Adjust opacity as needed */
+    z-index: 0; /* Ensure it is behind the content */
+}
+
+.body-background > div {
+    position: relative; /* Ensure content is above the background */
+    z-index: 1; /* Bring content above the background */
+}
+
+/* Custom text shadow */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+}
